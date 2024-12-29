@@ -6,148 +6,135 @@
     <title>Safe Roads, Safe Paws</title>
     <style>
         body {
-            font-family: "Georgia", Times, serif;
-            line-height: 1.8;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            background: url('background-image.jpg') no-repeat center center fixed;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed;
             background-size: cover;
-            color: #333;
+            color: white;
         }
-        body::before {
-            content: '';
-            position: fixed;
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255, 255, 255, 0.9);
             z-index: -1;
         }
         header {
-            background: #222;
+            background: #f4a261;
             color: white;
+            padding: 1rem 0;
             text-align: center;
-            padding: 0.5em 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.8em;
         }
         nav {
-            background: #444;
+            background: #264653;
             color: white;
-            padding: 0.5em;
-            text-align: center;
+            padding: 0.5rem 1rem;
+            display: flex;
+            justify-content: center;
         }
         nav a {
             color: white;
+            margin: 0 1rem;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         section {
-            padding: 1.5em;
-            margin: 1em auto;
-            max-width: 900px;
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1rem 2rem;
         }
-        section h2 {
-            font-size: 1.5em;
-            color: #333;
-            border-bottom: 2px solid #444;
-            padding-bottom: 0.2em;
-        }
-        ul {
-            padding-left: 1.2em;
+        h1, h2, h3 {
+            color: #e9c46a;
         }
         footer {
-            background: #222;
+            background: #264653;
             color: white;
             text-align: center;
-            padding: 0.5em 0;
-            position: sticky;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
-        .quote {
-            font-style: italic;
-            margin: 1em 0;
-            color: #555;
+        ul {
+            margin-left: 1.5rem;
+        }
+        .sub-section {
+            margin-left: 1.5rem;
         }
     </style>
 </head>
 <body>
+    <div class="overlay"></div>
+    <frameset rows="15%,*,10%" frameborder="0">
+        <frame src="header.html" name="header">
+        <frameset cols="15%,*">
+            <frame src="nav.html" name="nav">
+            <frame src="content.html" name="content">
+        </frameset>
+        <frame src="footer.html" name="footer">
+    </frameset>
+
     <header>
         <h1>Safe Roads, Safe Paws</h1>
-        <p>Guiding the Path to Safer Roads and Compassionate Design</p>
+        <p>Advocacy for Safer Roads and Protection of Stray Animals</p>
     </header>
 
     <nav>
-        <a href="#background">Background</a>
-        <a href="#problem">Problem Statement</a>
-        <a href="#objective">Objective</a>
-        <a href="#solutions">Proposed Solutions</a>
-        <a href="#goals">Goals</a>
-        <a href="#conclusion">Conclusion</a>
+        <a href="#introduction" target="content">Introduction</a>
+        <a href="#problem" target="content">Problem Statement</a>
+        <a href="#solutions" target="content">Proposed Solutions</a>
+        <a href="#conclusion" target="content">Conclusion</a>
     </nav>
 
-    <section id="background">
-        <h2>Background</h2>
-        <p>In the Philippines, there are an estimated 12 million stray dogs and cats. Many roam freely on roads, leading to poorly documented roadkill and hit-and-run incidents. This endangers animals and creates safety risks for drivers and pedestrians.</p>
+    <section>
+        <h2>Introduction</h2>
+        <p>Objective: To promote safer road designs and systems that protect animals and prevent accidents.</p>
     </section>
 
     <section id="problem">
         <h2>Problem Statement</h2>
-        <ul>
-            <li><strong>Waste Management Issues:</strong> Dead animals attract scavengers and pests, posing health risks.</li>
-            <li><strong>Safety Impacts:</strong> Collisions with stray animals lead to severe accidents.</li>
-            <li><strong>Ethical Dilemma:</strong> Raises questions about humane urban planning.</li>
-        </ul>
-    </section>
+        <h3>Define the Issue</h3>
+        <p>In the Philippines, roadkill and hit-and-run incidents involving stray animals, particularly dogs and cats, are common but poorly documented in official statistics. Rapid urbanization and high vehicle density exacerbate the problem.</p>
 
-    <section id="objective">
-        <h2>Objective</h2>
-        <p>Promote safer road designs and systems to protect animals and prevent accidents.</p>
+        <div class="sub-section">
+            <h3>Estimated Number of Strays</h3>
+            <p>According to the Department of Agriculture’s Bureau of Animal Industry (BAI), there are an estimated 12 million stray dogs and cats in the Philippines as of 2019.</p>
+
+            <h3>Animal Rescue Reports</h3>
+            <p>Animal welfare organizations, such as PAWS and CARA, report dealing with hundreds of cases of injured or killed animals yearly in Metro Manila.</p>
+
+            <h3>Road Accidents Involving Strays</h3>
+            <p>Studies by the MMDA indicate that stray animals are often involved in road accidents, contributing to traffic incidents, especially at night.</p>
+
+            <h3>Hit-and-Run Laws</h3>
+            <p>The Anti-Rabies Act of 2007 imposes fines for letting dogs roam freely but lacks specific laws for drivers involved in hit-and-run incidents with stray animals.</p>
+        </div>
     </section>
 
     <section id="solutions">
         <h2>Proposed Solutions</h2>
         <ul>
-            <li>Incorporate animal crossings in strategic areas.</li>
+            <li>Incorporate animal crossings like overpasses and underpasses.</li>
             <li>Use smart road technology for early detection of animals.</li>
-            <li>Create "stray zones" with speed reduction measures.</li>
-            <li>Data-driven infrastructure modifications.</li>
-            <li>Community-based stray management programs.</li>
-        </ul>
-    </section>
-
-    <section id="goals">
-        <h2>Goals</h2>
-        <ul>
-            <li>Reduce roadkill and accidents by 50% in five years.</li>
-            <li>Establish a data-driven accident mapping system by 2025.</li>
-            <li>Promote stricter policies for stray animal protection.</li>
-            <li>Install smart road technology in key regions by 2030.</li>
+            <li>Create designated "stray zones" with speed reduction and barriers.</li>
+            <li>Develop data-driven infrastructure modifications.</li>
+            <li>Implement community-based stray management programs.</li>
         </ul>
     </section>
 
     <section id="conclusion">
         <h2>Conclusion</h2>
-        <p>As future civil engineers, we must address roadkill and hit-and-run incidents involving stray animals. Through thoughtful planning and innovative engineering, we can create roads that are safe for everyone—drivers, pedestrians, and animals alike.</p>
-        <p class="quote">"Together, we can pave the way for a future where roads are safe for everyone—drivers, pedestrians, and stray animals alike."</p>
+        <p>As future civil engineers, we must advocate for road designs that ensure safety for both humans and animals. By implementing innovative solutions and fostering compassion, we can create a harmonious coexistence between urban development and animal welfare.</p>
+        <p>Join us in building a safer, more sustainable future.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Alvarez Rei Lorence L. | BSCE 2A | BES 121</p>
+        <p>&copy; Safe Roads, Safe Paws | 2024</p>
     </footer>
 </body>
 </html>
