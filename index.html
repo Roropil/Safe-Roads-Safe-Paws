@@ -8,6 +8,7 @@
         body {
             font-family: Georgia, serif;
             background-color: #f8f8f8;
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Subtle newspaper-like texture */
             color: #333;
             margin: 0;
             padding: 0;
@@ -37,22 +38,38 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+            transition: color 0.3s;
         }
         nav a:hover {
             text-decoration: underline;
+            color: #555;
         }
         main {
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         article {
             margin-bottom: 30px;
             border-bottom: 1px dashed #ccc;
             padding-bottom: 15px;
         }
+        article h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
         h1, h2, h3 {
             color: #333;
+        }
+        .highlight {
+            background-color: #eee;
+            padding: 10px;
+            border-left: 5px solid #333;
+            font-style: italic;
         }
         footer {
             background-color: #ddd;
@@ -67,6 +84,14 @@
             max-width: 100%;
             height: auto;
             filter: grayscale(100%);
+            border: 2px solid #ccc;
+        }
+        blockquote {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-left: 5px solid #333;
+            margin: 20px 0;
+            font-style: italic;
         }
     </style>
 </head>
@@ -85,30 +110,30 @@
         <section id="issue">
             <article>
                 <h2>What is up?</h2>
-                <img src="Road with stray animals crossing.jpg" alt="Road with stray animals crossing" class="graphic">
-                <p>In the Philippines, roadkill and hit-and-run incidents involving stray animals, particularly dogs and cats, are common but poorly documented in official statistics. According to the Philippine Animal Welfare Society (PAWS), stray animals are a persistent issue, especially in urban areas where animals roam freely and are often at risk of being hit by vehicles. While precise numbers are scarce, anecdotal reports and news stories suggest the frequency of such incidents is increasing due to rapid urbanization and high vehicle density.</p>
-                <p><strong>Estimated Number of Strays:</strong> According to the Department of Agriculture’s Bureau of Animal Industry (BAI), there are an estimated 12 million stray dogs and cats in the Philippines as of 2019. These strays are frequently found on major roads, posing a hazard to both animals and motorists.</p>
+                <img src="road_safety.jpg" alt="Road with stray animals crossing" class="graphic">
+                <p class="highlight">In the Philippines, roadkill and hit-and-run incidents involving stray animals, particularly dogs and cats, are common but poorly documented in official statistics.</p>
+                <p>According to the Philippine Animal Welfare Society (PAWS), stray animals are a persistent issue, especially in urban areas where animals roam freely and are often at risk of being hit by vehicles. While precise numbers are scarce, anecdotal reports and news stories suggest the frequency of such incidents is increasing due to rapid urbanization and high vehicle density.</p>
+                <blockquote>
+                    "According to the Department of Agriculture’s Bureau of Animal Industry (BAI), there are an estimated 12 million stray dogs and cats in the Philippines as of 2019."
+                </blockquote>
                 <p><strong>Animal Rescue Reports:</strong> Animal welfare organizations, such as PAWS and CARA (Compassion and Responsibility for Animals), report that many of the animals they rescue have been injured or killed due to road accidents. While exact statistics are not readily available, rescue groups deal with hundreds of such cases every year in Metro Manila alone.</p>
-                <p><strong>Road Accidents Involving Strays:</strong> A study on traffic incidents in the Philippines published by the MMDA indicates that stray animals are often involved in road accidents. MMDA reports suggest that vehicular accidents involving animals are particularly frequent on highways and less-monitored areas, especially at night when visibility is low.</p>
-                <p><strong>Hit-and-Run Laws:</strong> Although the Anti-Rabies Act of 2007 (RA 9482) imposes fines for letting dogs roam freely, there is currently no specific law penalizing drivers involved in hit-and-run incidents with stray animals. This lack of legal accountability may contribute to the number of accidents going unreported.</p>
             </article>
         </section>
         <section id="consequences">
             <article>
                 <h2>Consequences of Roadkill and Hit-and-Run Incidents</h2>
-                <img src="Illustration of stray animals on a busy road.jpg" alt="Illustration of stray animals on a busy road" class="graphic">
+                <img src="stray_danger.jpg" alt="Illustration of stray animals on a busy road" class="graphic">
                 <h3>Waste Management Issues</h3>
                 <p><strong>Sanitation Problems:</strong> Dead animals on roads can lead to significant sanitation challenges, attracting scavengers and pests that pose health risks to both humans and wildlife.</p>
                 <p><strong>Public Health Risks:</strong> The decomposition of roadkill can create unpleasant odors and attract vermin, contributing to unsanitary conditions in surrounding areas.</p>
                 <h3>Safety Impacts</h3>
                 <p><strong>Danger to Drivers:</strong> Collisions with stray animals can result in severe accidents, posing risks not only to drivers but also to passengers and pedestrians.</p>
-                <p><strong>Increased Accident Rates:</strong> Roads with high stray populations often report elevated accident rates.</p>
+                <blockquote>
+                    "Roads with high stray populations often report elevated accident rates."
+                </blockquote>
                 <h3>Ethical Dilemma</h3>
                 <p><strong>Moral Responsibility:</strong> There is an ethical obligation for society to protect vulnerable animals.</p>
                 <p><strong>Human-Animal Relationship:</strong> The frequent occurrence of accidents involving strays highlights a societal failure to address the plight of these animals.</p>
-                <h3>Critical Thinking Factors</h3>
-                <p><strong>Analyzing Consequences:</strong> Civil engineers and urban planners must critically assess the implications of their designs.</p>
-                <p><strong>Balancing Development and Welfare:</strong> The challenge lies in balancing the need for efficient transportation systems with the ethical responsibility to protect wildlife and strays.</p>
             </article>
         </section>
         <section id="solutions">
@@ -126,8 +151,11 @@
         <section id="goals">
             <article>
                 <h2>Our Goals & Objectives</h2>
-                <p>As future engineers, we’re committed to advocating for road designs that protect both humans and animals. Addressing the issue of roadkill and hit-and-run incidents not only improves public safety, but it also opens doors to broader animal welfare initiatives. By prioritizing infrastructure that considers the needs of stray animals, we create opportunities for future reforms—whether that’s through stricter animal protection laws or improved waste management practices.</p>
-                <p>Through thoughtful planning and innovative engineering, we can create roads that are safer for everyone. This initiative could pave the way for a future where civil engineering plays a key role in promoting animal welfare alongside urban development.</p>
+                <p>As future engineers, we’re committed to advocating for road designs that protect both humans and animals. Addressing the issue of roadkill and hit-and-run incidents not only improves public safety, but it also opens doors to broader animal welfare initiatives.</p>
+                <blockquote>
+                    "Through thoughtful planning and innovative engineering, we can create roads that are safer for everyone."
+                </blockquote>
+                <p>This initiative could pave the way for a future where civil engineering plays a key role in promoting animal welfare alongside urban development.</p>
             </article>
         </section>
     </main>
