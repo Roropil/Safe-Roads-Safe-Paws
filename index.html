@@ -7,25 +7,36 @@
     <style>
         body {
             font-family: Georgia, serif;
-            background-color: #fdf6e3;
+            background-color: #f8f8f8;
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #264653;
-            color: #fff;
-            padding: 20px;
+            background-color: #ddd;
+            color: #000;
             text-align: center;
+            padding: 20px;
+            border-bottom: 3px solid #333;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-style: italic;
+            font-size: 1.2em;
         }
         nav {
             margin: 10px 0;
-            text-align: center;
         }
         nav a {
-            color: #fff;
+            color: #000;
             text-decoration: none;
             margin: 0 15px;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
@@ -37,32 +48,32 @@
         }
         article {
             margin-bottom: 30px;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px dashed #ccc;
             padding-bottom: 15px;
         }
         h1, h2, h3 {
-            color: #2a9d8f;
+            color: #333;
         }
         footer {
-            background-color: #264653;
-            color: #fff;
+            background-color: #ddd;
+            color: #000;
             text-align: center;
             padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            border-top: 3px solid #333;
         }
         .graphic {
             display: block;
             margin: 20px auto;
             max-width: 100%;
             height: auto;
+            filter: grayscale(100%);
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Safe Roads, Safe Paws</h1>
+        <p>Guiding the Path to Safer Roads and Compassionate Design</p>
         <nav>
             <a href="#issue">The Issue</a>
             <a href="#consequences">Consequences</a>
