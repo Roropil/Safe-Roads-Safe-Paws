@@ -6,135 +6,122 @@
     <title>Safe Roads, Safe Paws</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: Georgia, serif;
+            background-color: #fdf6e3;
+            color: #333;
             margin: 0;
             padding: 0;
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-        }
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.6);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
         }
         header {
-            background: #f4a261;
-            color: white;
-            padding: 1rem 0;
+            background-color: #264653;
+            color: #fff;
+            padding: 20px;
             text-align: center;
         }
         nav {
-            background: #264653;
-            color: white;
-            padding: 0.5rem 1rem;
-            display: flex;
-            justify-content: center;
+            margin: 10px 0;
+            text-align: center;
         }
         nav a {
-            color: white;
-            margin: 0 1rem;
+            color: #fff;
             text-decoration: none;
+            margin: 0 15px;
         }
         nav a:hover {
             text-decoration: underline;
         }
-        section {
-            padding: 1rem 2rem;
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        article {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
         }
         h1, h2, h3 {
-            color: #e9c46a;
+            color: #2a9d8f;
         }
         footer {
-            background: #264653;
-            color: white;
+            background-color: #264653;
+            color: #fff;
             text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+            padding: 10px 0;
             position: relative;
             bottom: 0;
             width: 100%;
         }
-        ul {
-            margin-left: 1.5rem;
-        }
-        .sub-section {
-            margin-left: 1.5rem;
+        .graphic {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <div class="overlay"></div>
-    <frameset rows="15%,*,10%" frameborder="0">
-        <frame src="header.html" name="header">
-        <frameset cols="15%,*">
-            <frame src="nav.html" name="nav">
-            <frame src="content.html" name="content">
-        </frameset>
-        <frame src="footer.html" name="footer">
-    </frameset>
-
     <header>
         <h1>Safe Roads, Safe Paws</h1>
-        <p>Advocacy for Safer Roads and Protection of Stray Animals</p>
+        <nav>
+            <a href="#issue">The Issue</a>
+            <a href="#consequences">Consequences</a>
+            <a href="#solutions">Proposed Solutions</a>
+            <a href="#goals">Our Goals</a>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#introduction" target="content">Introduction</a>
-        <a href="#problem" target="content">Problem Statement</a>
-        <a href="#solutions" target="content">Proposed Solutions</a>
-        <a href="#conclusion" target="content">Conclusion</a>
-    </nav>
-
-    <section>
-        <h2>Introduction</h2>
-        <p>Objective: To promote safer road designs and systems that protect animals and prevent accidents.</p>
-    </section>
-
-    <section id="problem">
-        <h2>Problem Statement</h2>
-        <h3>Define the Issue</h3>
-        <p>In the Philippines, roadkill and hit-and-run incidents involving stray animals, particularly dogs and cats, are common but poorly documented in official statistics. Rapid urbanization and high vehicle density exacerbate the problem.</p>
-
-        <div class="sub-section">
-            <h3>Estimated Number of Strays</h3>
-            <p>According to the Department of Agriculture’s Bureau of Animal Industry (BAI), there are an estimated 12 million stray dogs and cats in the Philippines as of 2019.</p>
-
-            <h3>Animal Rescue Reports</h3>
-            <p>Animal welfare organizations, such as PAWS and CARA, report dealing with hundreds of cases of injured or killed animals yearly in Metro Manila.</p>
-
-            <h3>Road Accidents Involving Strays</h3>
-            <p>Studies by the MMDA indicate that stray animals are often involved in road accidents, contributing to traffic incidents, especially at night.</p>
-
-            <h3>Hit-and-Run Laws</h3>
-            <p>The Anti-Rabies Act of 2007 imposes fines for letting dogs roam freely but lacks specific laws for drivers involved in hit-and-run incidents with stray animals.</p>
-        </div>
-    </section>
-
-    <section id="solutions">
-        <h2>Proposed Solutions</h2>
-        <ul>
-            <li>Incorporate animal crossings like overpasses and underpasses.</li>
-            <li>Use smart road technology for early detection of animals.</li>
-            <li>Create designated "stray zones" with speed reduction and barriers.</li>
-            <li>Develop data-driven infrastructure modifications.</li>
-            <li>Implement community-based stray management programs.</li>
-        </ul>
-    </section>
-
-    <section id="conclusion">
-        <h2>Conclusion</h2>
-        <p>As future civil engineers, we must advocate for road designs that ensure safety for both humans and animals. By implementing innovative solutions and fostering compassion, we can create a harmonious coexistence between urban development and animal welfare.</p>
-        <p>Join us in building a safer, more sustainable future.</p>
-    </section>
-
+    <main>
+        <section id="issue">
+            <article>
+                <h2>What is up?</h2>
+                <img src="road_safety.jpg" alt="Road with stray animals crossing" class="graphic">
+                <p>In the Philippines, roadkill and hit-and-run incidents involving stray animals, particularly dogs and cats, are common but poorly documented in official statistics. According to the Philippine Animal Welfare Society (PAWS), stray animals are a persistent issue, especially in urban areas where animals roam freely and are often at risk of being hit by vehicles. While precise numbers are scarce, anecdotal reports and news stories suggest the frequency of such incidents is increasing due to rapid urbanization and high vehicle density.</p>
+                <p><strong>Estimated Number of Strays:</strong> According to the Department of Agriculture’s Bureau of Animal Industry (BAI), there are an estimated 12 million stray dogs and cats in the Philippines as of 2019. These strays are frequently found on major roads, posing a hazard to both animals and motorists.</p>
+                <p><strong>Animal Rescue Reports:</strong> Animal welfare organizations, such as PAWS and CARA (Compassion and Responsibility for Animals), report that many of the animals they rescue have been injured or killed due to road accidents. While exact statistics are not readily available, rescue groups deal with hundreds of such cases every year in Metro Manila alone.</p>
+                <p><strong>Road Accidents Involving Strays:</strong> A study on traffic incidents in the Philippines published by the MMDA indicates that stray animals are often involved in road accidents. MMDA reports suggest that vehicular accidents involving animals are particularly frequent on highways and less-monitored areas, especially at night when visibility is low.</p>
+                <p><strong>Hit-and-Run Laws:</strong> Although the Anti-Rabies Act of 2007 (RA 9482) imposes fines for letting dogs roam freely, there is currently no specific law penalizing drivers involved in hit-and-run incidents with stray animals. This lack of legal accountability may contribute to the number of accidents going unreported.</p>
+            </article>
+        </section>
+        <section id="consequences">
+            <article>
+                <h2>Consequences of Roadkill and Hit-and-Run Incidents</h2>
+                <img src="stray_danger.jpg" alt="Illustration of stray animals on a busy road" class="graphic">
+                <h3>Waste Management Issues</h3>
+                <p><strong>Sanitation Problems:</strong> Dead animals on roads can lead to significant sanitation challenges, attracting scavengers and pests that pose health risks to both humans and wildlife.</p>
+                <p><strong>Public Health Risks:</strong> The decomposition of roadkill can create unpleasant odors and attract vermin, contributing to unsanitary conditions in surrounding areas.</p>
+                <h3>Safety Impacts</h3>
+                <p><strong>Danger to Drivers:</strong> Collisions with stray animals can result in severe accidents, posing risks not only to drivers but also to passengers and pedestrians.</p>
+                <p><strong>Increased Accident Rates:</strong> Roads with high stray populations often report elevated accident rates.</p>
+                <h3>Ethical Dilemma</h3>
+                <p><strong>Moral Responsibility:</strong> There is an ethical obligation for society to protect vulnerable animals.</p>
+                <p><strong>Human-Animal Relationship:</strong> The frequent occurrence of accidents involving strays highlights a societal failure to address the plight of these animals.</p>
+                <h3>Critical Thinking Factors</h3>
+                <p><strong>Analyzing Consequences:</strong> Civil engineers and urban planners must critically assess the implications of their designs.</p>
+                <p><strong>Balancing Development and Welfare:</strong> The challenge lies in balancing the need for efficient transportation systems with the ethical responsibility to protect wildlife and strays.</p>
+            </article>
+        </section>
+        <section id="solutions">
+            <article>
+                <h2>Proposed Solutions</h2>
+                <ul>
+                    <li><strong>Strategic Animal Crossings:</strong> Place overpasses or underpasses in key areas, especially near parks or stray hotspots.</li>
+                    <li><strong>Smart Road Technology:</strong> Install motion sensors or thermal cameras to detect animals near roads and trigger warning signs.</li>
+                    <li><strong>Stray Zones with Speed Controls:</strong> Introduce zones with lower speed limits, barriers to prevent stray crossings, and reflective road markings.</li>
+                    <li><strong>Data-Driven Road Designs:</strong> Use accident data to target areas with frequent incidents and modify road layouts.</li>
+                    <li><strong>Community Stray Management:</strong> Partner with local governments for stray management programs, including spay-neuter clinics.</li>
+                </ul>
+            </article>
+        </section>
+        <section id="goals">
+            <article>
+                <h2>Our Goals & Objectives</h2>
+                <p>As future engineers, we’re committed to advocating for road designs that protect both humans and animals. Addressing the issue of roadkill and hit-and-run incidents not only improves public safety, but it also opens doors to broader animal welfare initiatives. By prioritizing infrastructure that considers the needs of stray animals, we create opportunities for future reforms—whether that’s through stricter animal protection laws or improved waste management practices.</p>
+                <p>Through thoughtful planning and innovative engineering, we can create roads that are safer for everyone. This initiative could pave the way for a future where civil engineering plays a key role in promoting animal welfare alongside urban development.</p>
+            </article>
+        </section>
+    </main>
     <footer>
-        <p>&copy; Safe Roads, Safe Paws | 2024</p>
+        &copy; Safe Roads, Safe Paws | 2024
     </footer>
 </body>
 </html>
