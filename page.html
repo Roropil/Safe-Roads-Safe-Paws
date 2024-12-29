@@ -6,36 +6,82 @@
     <title>Safe Roads, Safe Paws</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: "Georgia", Times, serif;
+            line-height: 1.8;
             margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
-        section {
-            padding: 1em;
-            margin: 1em auto;
-            max-width: 800px;
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        h1, h2, h3 {
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
         }
-        footer {
-            background: #4CAF50;
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            z-index: -1;
+        }
+        header {
+            background: #222;
             color: white;
             text-align: center;
-            padding: 1em 0;
-            position: fixed;
+            padding: 0.5em 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        nav {
+            background: #444;
+            color: white;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 1.5em;
+            margin: 1em auto;
+            max-width: 900px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 2px solid #444;
+            padding-bottom: 0.2em;
+        }
+        ul {
+            padding-left: 1.2em;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 0.5em 0;
+            position: sticky;
             bottom: 0;
             width: 100%;
+        }
+        .quote {
+            font-style: italic;
+            margin: 1em 0;
+            color: #555;
         }
     </style>
 </head>
@@ -45,12 +91,21 @@
         <p>Guiding the Path to Safer Roads and Compassionate Design</p>
     </header>
 
-    <section>
+    <nav>
+        <a href="#background">Background</a>
+        <a href="#problem">Problem Statement</a>
+        <a href="#objective">Objective</a>
+        <a href="#solutions">Proposed Solutions</a>
+        <a href="#goals">Goals</a>
+        <a href="#conclusion">Conclusion</a>
+    </nav>
+
+    <section id="background">
         <h2>Background</h2>
         <p>In the Philippines, there are an estimated 12 million stray dogs and cats. Many roam freely on roads, leading to poorly documented roadkill and hit-and-run incidents. This endangers animals and creates safety risks for drivers and pedestrians.</p>
     </section>
 
-    <section>
+    <section id="problem">
         <h2>Problem Statement</h2>
         <ul>
             <li><strong>Waste Management Issues:</strong> Dead animals attract scavengers and pests, posing health risks.</li>
@@ -59,12 +114,12 @@
         </ul>
     </section>
 
-    <section>
+    <section id="objective">
         <h2>Objective</h2>
         <p>Promote safer road designs and systems to protect animals and prevent accidents.</p>
     </section>
 
-    <section>
+    <section id="solutions">
         <h2>Proposed Solutions</h2>
         <ul>
             <li>Incorporate animal crossings in strategic areas.</li>
@@ -75,7 +130,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="goals">
         <h2>Goals</h2>
         <ul>
             <li>Reduce roadkill and accidents by 50% in five years.</li>
@@ -85,9 +140,10 @@
         </ul>
     </section>
 
-    <section>
+    <section id="conclusion">
         <h2>Conclusion</h2>
         <p>As future civil engineers, we must address roadkill and hit-and-run incidents involving stray animals. Through thoughtful planning and innovative engineering, we can create roads that are safe for everyone—drivers, pedestrians, and animals alike.</p>
+        <p class="quote">"Together, we can pave the way for a future where roads are safe for everyone—drivers, pedestrians, and stray animals alike."</p>
     </section>
 
     <footer>
